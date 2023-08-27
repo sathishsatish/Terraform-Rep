@@ -5,3 +5,13 @@ resource "aws_instance" "terraform-instance" {
     Name = "Demo1"
   }
 }
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "first-bucket-name-2708"
+  acl    = "private"  # Set the bucket's access control list (ACL)
+
+  tags = {
+    Name = "Terraform Bucket"
+    Environment = "Development"
+  }
+}
