@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
-provider "aws" {
+provider "aws_vpc" {
   region = "us-west-1" 
 }
 
