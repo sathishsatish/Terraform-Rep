@@ -19,6 +19,6 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
-resource "aws_vpc_1" "my_vpc" {
+resource "aws_vpc_first" "my_vpc" {
   cidr_block = "10.0.0.0/16"
 }
