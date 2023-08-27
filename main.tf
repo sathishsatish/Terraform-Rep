@@ -18,3 +18,11 @@ resource "aws_s3_bucket" "my_bucket" {
     Environment = "Development"
   }
 }
+
+provider "aws" {
+  region = "us-west-1" 
+}
+
+resource "aws_vpc_1" "my_vpc" {
+  cidr_block = "10.0.0.0/16"
+}
