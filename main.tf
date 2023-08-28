@@ -1,3 +1,4 @@
+#create a Instance
 resource "aws_instance" "terraform-instance" {
 
    count = 3  
@@ -9,6 +10,7 @@ resource "aws_instance" "terraform-instance" {
   }
 }
 
+#Create S3 Bucket
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "first-bucket-name-2708"
   acl    = "private"  # Set the bucket's access control list (ACL)
@@ -19,6 +21,22 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
+#Create a VPC
 resource "aws_vpc" "example_vpc" {
   cidr_block = "10.0.0.0/16"
+}
+
+#Security Group
+
+resource "aws_security_group" "example_security_group" {
+  name        = "first-security-group"
+  description = "First security group"
+
+ 
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  # Allow SSH from any source
+  }
 }
