@@ -4,7 +4,8 @@ resource "aws_instance" "terraform-instance" {
    count = 3  
   ami           = "ami-03f2f5212f24db70a" 
   instance_type = "t3.micro"
-   
+  security_groups =[aws_security_group.example_security_group.name]
+
   tags = {
     Name = "Demo2-${count.index}"
   }
