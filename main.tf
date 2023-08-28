@@ -16,6 +16,10 @@ resource "aws_s3_bucket" "my_bucket" {
   bucket = "first-bucket-name-2708"
   acl    = "private"  # Set the bucket's access control list (ACL)
 
+versioning {
+    enabled = true  
+  }
+
   tags = {
     Name = "Terraform Bucket"
     Environment = "Development"
