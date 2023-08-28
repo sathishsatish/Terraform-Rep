@@ -31,6 +31,11 @@ resource "aws_vpc" "example_vpc" {
   cidr_block = "10.0.0.0/16"
 }
 
+resource "aws_internet_gateway" "example_igw" {
+  vpc_id = aws_vpc.example_vpc.id
+}
+
+
 #Security Group
 
 resource "aws_security_group" "example_security_group" {
@@ -43,5 +48,13 @@ resource "aws_security_group" "example_security_group" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]  # Allow SSH from any source
+  }
+
+  // Egress rule (outbound traffic)
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]  # Allow all outbound traffic
   }
 }
