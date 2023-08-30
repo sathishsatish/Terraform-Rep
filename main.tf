@@ -36,7 +36,7 @@ resource "aws_internet_gateway" "example_igw" {
 }
 
 
-#Security Group
+##Security Group
 
 resource "aws_security_group" "example_security_group" {
   name        = "first-security-group"
