@@ -14,7 +14,7 @@ resource "aws_instance" "terraform-instance" {
 #Create S3 Bucket
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "first-bucket-name-2708"
-  acl    = "private"  # Set the bucket's access control list (ACL)
+  acl    = "private" 
 
 versioning {
     enabled = true  
@@ -57,4 +57,16 @@ resource "aws_security_group" "example_security_group" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]  # Allow all outbound traffic
   }
+
+
+# Create a IAM user Module
+
+module "iam user"{
+source = "./TF-module"
+
+}
+
+
+
+
 }
