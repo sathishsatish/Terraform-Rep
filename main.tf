@@ -57,7 +57,7 @@ resource "aws_security_group" "example_security_group" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]  # Allow all outbound traffic
   }
-
+}
 
 # Create a IAM user Module
 
@@ -69,4 +69,4 @@ resource "aws_security_group" "example_security_group" {
 
 
 
-}
+
