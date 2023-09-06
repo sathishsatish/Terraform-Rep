@@ -61,10 +61,10 @@ resource "aws_security_group" "example_security_group" {
 
 # Create a IAM user Module
 
-module "iam_user"{
-source = "./TF-module"
+  module "iam_user"{
+  source = "./TF-module"
 
-}
+  }
 
 
 
