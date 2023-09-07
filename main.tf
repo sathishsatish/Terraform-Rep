@@ -61,6 +61,7 @@ resource "aws_security_group" "example_security_group" {
   }
 }
 
+*/
 
 # Create a IAM user Module
 
@@ -68,7 +69,7 @@ module "iam_user"{
    source = "./TF-Module-IAM User"
 }
 
-*/
+
 
 module "ec2_instance"{
     source = "./TF-Module-EC2"
