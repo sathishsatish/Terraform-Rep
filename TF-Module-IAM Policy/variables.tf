@@ -1,19 +1,19 @@
 variable "policy_name"{
     description = "IAM policy Name"
     type = string
-    default = "IAM_Policy"
+  #  default = "IAM_Policy_070923"
 }
 
 variable "policy_discripttion"{
     description = "IAM policy Discription"
     type = string
-    default = "IAM_Policy_Discription"
+ #   default = "IAM_Policy_Discription"
 }
 
 variable "action"{
     description = "List of Allowed Action"
     type = list(string)
-    default = "ec2:Describe*"
+  #  default = "ec2:Describe*"
 }
 
 variable "effect"{
@@ -25,5 +25,5 @@ variable "effect"{
 variable "resources"{
     description = "List of allowed resouce"
     type = list(string)
-    default = "*"
+ #   default = "*"
 }
