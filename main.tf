@@ -1,3 +1,4 @@
+/*
 #create a Instance
 resource "aws_instance" "terraform-instance" {
 
@@ -25,6 +26,7 @@ versioning {
     Environment = "Development"
   }
 }
+
 
 #Create a VPC
 resource "aws_vpc" "example_vpc" {
@@ -59,14 +61,23 @@ resource "aws_security_group" "example_security_group" {
   }
 }
 
+
 # Create a IAM user Module
 
-  module "iam_user"{
-  source = "./TF-module"
+module "iam_user"{
+   source = "./TF-Module-IAM User"
+}
 
-  }
+*/
 
-
+module "ec2_instance"{
+    source = "./TF-Module-EC2"
+    ami_id = "ami-03f2f5212f24db70a"
+    instance_type = "t2.micro"
+    subnet_id = "subnet-02192f07acc7b848d"
+    instance_name = "EC2_Instance_070923"
+    
+}
 
 
 
