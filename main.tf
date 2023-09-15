@@ -61,7 +61,7 @@ resource "aws_security_group" "example_security_group" {
   }
 }
 
-*/
+
 
 # Create a IAM user Module
 
@@ -69,6 +69,15 @@ module "iam_user"{
    source = "./TF-Module-IAM User"
 }
 
+*/
+
+# Create a IAM user Module
+
+module "iam_user"{
+   source = "./Module-IAM USER"
+}
+
+/*
 module "ec2_instance"{
     source = "./TF-Module-EC2"
     ami_id = "ami-03f2f5212f24db70a"
@@ -86,5 +95,5 @@ module "instance_policy"{
     
 }
 
-
+*/
 
