@@ -77,7 +77,7 @@ module "iam_user"{
    source = "./Module-IAM USER"
 }
 
-/*
+
 module "ec2_instance"{
     source = "./TF-Module-EC2"
     ami_id = "ami-03f2f5212f24db70a"
@@ -85,7 +85,7 @@ module "ec2_instance"{
     subnet_id = "subnet-02192f07acc7b848d"
     instance_name = "EC2_Instance_070923"
 }
-
+/*
 module "instance_policy"{
     source = "./TF-Module-IAM Policy"
     policy_name = "IAM_Policy_070923"
