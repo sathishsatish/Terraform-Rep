@@ -21,5 +21,5 @@ variable "subnet_id"{
 variable "instance_name"{
     description = "Name for EC2 instance"
     type = string
-   # default = "EC2_Instance_150923"
+   # default = "EC2-Instance-150923"
 }
