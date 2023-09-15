@@ -1,7 +1,7 @@
 variable "policy_name"{
     description = "IAM policy Name"
     type = string
-  #  default = "IAM_Policy_070923"
+  #  default = "IAM_Policy_150923"
 }
 
 variable "policy_discripttion"{
