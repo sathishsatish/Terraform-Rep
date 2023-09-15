@@ -83,12 +83,12 @@ module "ec2_instance"{
     ami_id = "ami-03f2f5212f24db70a"
     instance_type = "t2.micro"
     subnet_id = "subnet-02192f07acc7b848d"
-    instance_name = "EC2_Instance_070923"
+    instance_name = "EC2_Instance_150923"
 }
 /*
 module "instance_policy"{
     source = "./TF-Module-IAM Policy"
-    policy_name = "IAM_Policy_070923"
+    policy_name = "IAM_Policy_150923"
     policy_discripttion = "IAM_Policy_Discription"
     action = ["ec2:Describe*"]
     resources = ["*"]
