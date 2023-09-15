@@ -85,7 +85,7 @@ module "ec2_instance"{
     subnet_id = "subnet-02192f07acc7b848d"
     instance_name = "EC2_Instance_150923"
 }
-/*
+
 module "instance_policy"{
     source = "./TF-Module-IAM Policy"
     policy_name = "IAM_Policy_150923"
@@ -95,5 +95,5 @@ module "instance_policy"{
     
 }
 
-*/
+
 
