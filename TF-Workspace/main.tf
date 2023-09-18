@@ -13,8 +13,7 @@ resource "aws_instance" "terraform-instance" {
     }
 }
 
-local {
-        instance_name = "${terraform.workspace}-instance"
-
+locals {
+     instance_name = "${terraform.workspace}-instance"
 }
 
