@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "my_bucket" {
   bucket = "first-bucket-name-2708"
   acl    = "private" 
 
-versioning {
+ versioning {
     enabled = true  
   }
 
