@@ -1,4 +1,4 @@
-
+/*
 resource "aws_instance" "terraform-instance" {
 
     ami           = "ami-073e64e4c237c08ad" 
@@ -12,7 +12,7 @@ resource "aws_instance" "terraform-instance" {
 locals {
      instance_name = "${terraform.workspace}-instance"
 }
-
+*/
 
 terraform {
 	backend "s3" {
