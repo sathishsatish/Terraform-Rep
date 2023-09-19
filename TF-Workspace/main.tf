@@ -1,4 +1,4 @@
-/*
+
 resource "aws_instance" "terraform-instance" {
 
     ami           = "ami-073e64e4c237c08ad" 
@@ -12,12 +12,12 @@ resource "aws_instance" "terraform-instance" {
 locals {
      instance_name = "${terraform.workspace}-instance"
 }
-*/
+
 
 terraform {
 	backend "s3" {
-	bucket = "workspace-backup"
+	bucket = "TF-workspace-backup"
 	key    = "workspacebackup/terraform.tfstate"
-	region = "eu-west-1"
+	region = "us-west-1"
 }
 }
