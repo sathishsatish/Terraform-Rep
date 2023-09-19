@@ -1,6 +1,3 @@
-
-
-#create a Instance
 resource "aws_instance" "terraform-instance" {
 
     ami           = "ami-073e64e4c237c08ad" 
