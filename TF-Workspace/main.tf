@@ -12,3 +12,10 @@ locals {
      instance_name = "${terraform.workspace}-instance"
 }
 
+terraform {
+	backend "s3" {
+	bucket = "workspace-backup"
+	key    = "workspacebackup/terraform.tfstate"
+	region = "us-west-1"
+}
+}
