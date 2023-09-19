@@ -18,6 +18,6 @@ terraform {
 	backend "s3" {
 	bucket = "workspace-backup"
 	key    = "workspacebackup/terraform.tfstate"
-	region = "us-west-1"
+	region = "eu-west-1"
 }
 }
