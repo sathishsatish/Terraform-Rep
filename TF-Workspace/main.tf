@@ -21,3 +21,12 @@ terraform {
 	region = "us-west-1"
 }
 }
+
+
+#  terraform workspace new prodd
+#  terraform workspace new testt
+#  terraform workspace list / show
+#  terraform workspace select prodd / testt
+#  terraform plan -var-file="prodd.tf" / "testt.tf"
+#  terraform apply -var-file="prodd.tf" / "testt.tf"
+#  aws s3api create-bucket --bucket my-unique-tf-workspace-backup --region us-west-1 --create-bucket-configuration LocationConstraint=us-west-1
