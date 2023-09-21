@@ -10,3 +10,12 @@ resource "aws_instance" "manual-ec2-import" {
     Name = "manual-ec2-import"
   }
 }
+
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "manual-s3bucket-import"
+  
+ versioning {
+    enabled = true  
+  }
+}
