@@ -27,4 +27,4 @@ resource "aws_s3_bucket" "my_bucket" {
 # terraform import aws_instance.manual-ec2-import i-057993601a835e5f5
 
 ## import cammand for s3:
-# terraform import aws_s3_bucket.mybucket manual-s3bucket-import
+# terraform import aws_s3_bucket.my_bucket manual-s3bucket-import
