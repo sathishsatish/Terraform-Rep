@@ -32,4 +32,4 @@ terraform {
 
 
 #  aws s3api create-bucket --bucket my-unique-tf-workspace-backup --region us-west-1 --create-bucket-configuration LocationConstraint=us-west-1
-# git pull >> terraform init >> 
+# git pull >> terraform init >>  cammand

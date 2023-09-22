@@ -1,4 +1,3 @@
-/*
 provider "aws" {
   region = "us-west-1" 
 }
@@ -11,7 +10,7 @@ resource "aws_instance" "manual-ec2-import" {
     Name = "manual-ec2-import"
   }
 }
-*/
+
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "manual-s3bucket-import"
@@ -28,3 +27,5 @@ resource "aws_s3_bucket" "my_bucket" {
 
 ## import cammand for s3:
 # terraform import aws_s3_bucket.my_bucket manual-s3bucket-import
+
+# git pull >> terraform init >> ec2/s3 cammand
